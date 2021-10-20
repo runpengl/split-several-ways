@@ -111,6 +111,11 @@ p {
     width: 20px;
 }
 
+.row .spacer.special-border {
+    border-right: solid 0.5px #777;
+    border-left: solid 0.5px #777;
+}
+
 .alert {
     display: none;
 }
