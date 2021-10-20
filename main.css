@@ -1,0 +1,136 @@
+body {
+    font-size: 16px;
+    font-family: 'EB Garamond', serif;
+    background-color: #fafafa;
+    color: rgb(20, 20, 20);
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+    margin: 5px 0;
+}
+
+.content {
+    padding: 35px 70px;
+}
+
+.guess {
+    margin: 0;
+    display: flex;
+}
+
+.guess input {
+    height: 50px;
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    border: solid #777 2px;
+    border-right: none;
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.guess button {
+    height: 50px;
+    border: solid #777 2px;
+    border-left: none;
+    border-radius: 0;
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.guess button:active,
+.guess button:hover {
+    background-color: #ddd;
+}
+
+.puzzle {
+    border: solid #dec57c 2px;
+    background-color: #fcf5e5;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.row {
+    margin-left: 0;
+    margin-bottom: 10px;
+    display: inline-flex;
+}
+
+.row input {
+    height: 30px;
+    width: 25px;
+    border: solid #777 0.5px;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    margin-right: -1px;
+    color: #777;
+}
+
+.row input:nth-of-type(1) {
+    border-left: solid #777 0.5px;
+}
+
+.row input:nth-last-of-type(2) {
+    border-right: solid #777 0.5px;
+}
+
+.row input.box {
+    background-color: rgb(240, 240, 240);
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    border-right: solid 0.5px #777;
+    border-left: solid 0.5px #777;
+    color: rgb(20, 20, 20);
+}
+
+.row input.l {
+    background-color: rgb(240, 240, 240);
+    border: solid 3px black;
+    color: rgb(20, 20, 20);
+}
+
+.row .box.border-left {
+    border-left: solid 3px black;
+}
+
+.row .box.border-right {
+    border-right: solid 4px black;
+}
+
+.row .spacer {
+    margin: 0;
+    height: 30px;
+    width: 20px;
+}
+
+.alert {
+    display: none;
+}
+
+.rarrow {
+    font-size: 24px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.part2 .row input.box,
+.part2 .row input.l {
+    background-color: rgb(230, 230, 230);
+}
+
+.part3 span {
+    font-size: 24px;
+}
+
+.part3 span:last-child {
+    border: solid #777 2px;
+    padding: 1px 5px 3px;
+}
